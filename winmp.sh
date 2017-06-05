@@ -45,6 +45,7 @@ do
 			echo "Your Port is now $LPORT"
 			echo -e "${LBLUE}Enter Name:${NC}"
 			read NAME
+			mkdir /root/winmp
 			mkdir /root/winmp/payloads
 			clear
 			echo -e "${GEN}GENERATING:${NC}"
@@ -63,6 +64,7 @@ do
 			echo "Your Port is now $LPORT"
 			echo -e "${LBLUE}Enter Name:${NC}"
 			read NAME
+			mkdir /root/winmp
 			mkdir /root/winmp/payloads
 			clear
 			echo -e "${GEN}GENERATING:${NC}"
@@ -72,6 +74,7 @@ do
 			;;
 
 		"Listen 64-Bit")
+			mkdir /root/winmp
 			mkdir /root/winmp/temp
 			truncate -s 0 "/root/winmp/temp/Win64.tmp"
 			clear
@@ -91,7 +94,8 @@ do
 			;;
 
 		"Listen 32-Bit")
-mkdir /root/winmp/temp
+			mkdir /root/winmp
+			mkdir /root/winmp/temp
 			truncate -s 0 "/root/winmp/temp/Win32.tmp"
 			clear
 			echo use multi/handler >> "/root/winmp/temp/Win32.tmp"
